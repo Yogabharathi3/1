@@ -1,34 +1,27 @@
-# EX-01-2d
+# EX-02-2
 
 ## AIM
-To write a C program to input two numbers from user and find minimum between
-two numbers using switch case.
+To write a C Program to print the string "APPLE" n number of times.
 ## ALGORITHM
 1. Start the program.
-2. Read two variables.
-3. Find minimum of two numbers using switch case.
-4. Display the result.
-5. Stop the program.
+2. Read a variable.
+3. Using for loop print the string n number of times.
+4. Stop the program.
 ## PROGRAM
 ```
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
-int a,b;
-scanf("%d%d",&a,&b);
-switch (a<b)
+int n, i;
+scanf("%d",&n);
+for(i=1;i<=n;i++)
 {
-case 1:
-printf("%d",a);
-break;
-case 0:
-printf("%d",b);
-break;
+printf("APPLE\n");
 }
 }
 ```
 ## OUTPUT
-![image](https://github.com/Yogabharathi3/1/assets/118899387/2b0b080b-39c4-4064-800a-433853af7bc5)
+![image](https://github.com/Yogabharathi3/1/assets/118899387/95f0de62-5ae7-4c4b-9556-3ddc6dfc051d)
 
 ## RESULT
 Thus the program  has been executed successfully.
