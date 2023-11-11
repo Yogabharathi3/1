@@ -1,10 +1,11 @@
-# EX-01-2a
+# EX-01-2c
+
 ## AIM
-To write a C program to check whether the given number is even number and if it is even check whether the given number it is less than or equal to 10 or not using nested if.
+To write a C program to find a maximum of two integers using a conditional operator.
 ## ALGORITHM
 1. Start the program.
-2. Read one variable.
-3. Check whether the given number is odd or even using if and else.
+2. Read two variables.
+3. Find maximum of two number using conditional operator (?:).
 4. Display the result.
 5. Stop the program.
 ## PROGRAM
@@ -12,25 +13,14 @@ To write a C program to check whether the given number is even number and if it 
 #include <stdio.h>
 int main()
 {
-int num;
-scanf("%d",&num);
-if(num%2==0)
-{
-printf("The number is even \n");
-if(num<=10)
-{
-printf("The number is less than or equal to 10");
-}
-else
-{
-printf("The number is not less than or equal to 10");
-}
-}
-else
-printf("The number is NOT an even number");
+int num1, num2, max;
+scanf("%d%d", &num1, &num2);
+max = (num1 > num2) ? num1 : num2;
+printf("Maximum between %d and %d is %d", num1, num2, max);
 }
 ```
 ## OUTPUT
-![image](https://github.com/Yogabharathi3/1/assets/118899387/acc9e010-acd6-47e1-a5cc-553a0ffefa13)
+![image](https://github.com/Yogabharathi3/1/assets/118899387/c6f11af2-15e7-4409-809c-d2c4ad3f870e)
+
 ## RESULT
 Thus the program  has been executed successfully.
