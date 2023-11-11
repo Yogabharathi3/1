@@ -23,7 +23,7 @@ printf("\nj=%d",j);
 }
 ```
 ## OUTPUT
-![image](https://github.com/Yogabharathi3/1/assets/118899387/3597b816-ed6d-46a1-82f7-fbb488b97a82)
+![image](https://github.com/Yogabharathi3/1/assets/118899387/4242bda3-0680-4946-847f-70c2125a0605)
 
 ## RESULT
 Thus the program  has been executed successfully.
