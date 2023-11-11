@@ -1,22 +1,34 @@
 # EX-01-2a
-## AIM:
-Write a program to print welcome to india
-## ALGORITHM:
-1. Start
-2. Set welcomeMessage = "Welcome to India"
-3. Output welcomeMessage
-4. End
-## PROGRAM:
-```
+## AIM
+To write a C program to check whether the given number is even number and if it is even check whether the given number it is less than or equal to 10 or not using nested if.
+## ALGORITHM
+1. Start the program.
+2. Read one variable.
+3. Check whether the given number is odd or even using if and else.
+4. Display the result.
+5. Stop the program.
+## PROGRAM
 #include <stdio.h>
 int main()
 {
-    printf("welcome to india");
-    return 0;
+int num;
+scanf("%d",&num);
+if(num%2==0)
+{
+printf("The number is even \n");
+if(num<=10)
+{
+printf("The number is less than or equal to 10");
 }
-```
-## OUTPUT:
-![image](https://github.com/Yogabharathi3/1/assets/118899387/1ac0ca13-b564-48d3-8874-fbbb6d38e137)
-
-## RESULT:
-Thus the program  has to print welcome to india been executed successfully.
+else
+{
+printf("The number is not less than or equal to 10");
+}
+}
+else
+printf("The number is NOT an even number");
+}
+## OUTPUT
+![image](https://github.com/Yogabharathi3/1/assets/118899387/acc9e010-acd6-47e1-a5cc-553a0ffefa13)
+## RESULT
+Thus the program  has been executed successfully.
