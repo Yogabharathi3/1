@@ -1,28 +1,30 @@
-# EX-03-1c
+# EX-03-1d
 ## AIM
-Create a C program to read n elements as input and print the first three elements of an array
+Write a C program to delete last element in an array
 ## ALGORITHM
 1. Define the array
 2. Read the input
-3. Print the first three elements
-4. End the program
+3. Delete the last element
+4. Print the last elements
+5. End the program
 ## PROGRAM
 ```
 #include<stdio.h>
 int main(){
-int i,n,a[5];
-scanf("%d",&n);
-for(i=0;i<n;i++) {
-scanf("%d",&a[i]);
+int a,i;
+scanf("%d",&a);
+int b[a];
+for(i=0;i<a;i++) {
+scanf("%d",&b[i]);
 }
-for(i=0;i<n;i++)
-{ printf("%d
-",a[i]);
+for(i=0;i<a-1;i++)
+{
+printf("%d ",b[i]);
 }
-}
+return 0;
 ```
 ## OUTPUT
-![image](https://github.com/Yogabharathi3/1/assets/118899387/5e33e195-7539-4fa9-86f8-2fbb7e82d28d)
+![image](https://github.com/Yogabharathi3/1/assets/118899387/02c851e4-2d9a-4b89-bf39-7059622a73c8)
 
 ## RESULT
 Thus the program  has been executed successfully.
