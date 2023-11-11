@@ -1,31 +1,31 @@
-# EX-02-1d
+# EX-03-1a
 ## AIM
-To write a c program to find the sum of even digits using for loop.
+Write a program to prepare EMI calculation for 2000000 ,8.24,6Years using function withreturn type without arguments.
 ## ALGORITHM
-1. Start the program.
-2. Read a variable.
-3. Using for loop print the sum of even digits.
-4. Stop the program.
+1. Define the function
+2. Call the function
+3. Print the EMI amount
+4. Handle errors
+5. End the program
 ## PROGRAM
 ```
 #include<stdio.h>
-int main()
-{
-int a,i,s=0;
-scanf("%d",&a);
-for(i=1;i<=a;i++)
-{
-if(i%2==0)
-{
-s+= i;
-printf("%d ",i);
+#include<math.h>
+float emi(float x,float y,float
+z){y=y/(12*100);
+z=z*12;
+float isl=x * y *pow((1+y),z) / (pow(1+y,z)-1);
+return isl;
 }
-}
-printf("\n%d ",s);
+int main(){
+float a=2000000,b=8.24,c=6,emos;
+scanf("%f%f%f",&a,&b,&c);
+emos=emi(a,b,c);
+printf("Monthly EMI is= %.3f",emos);
 }
 ```
 ## OUTPUT
-![image](https://github.com/Yogabharathi3/1/assets/118899387/e39bbce9-b362-4136-9f31-9f3df5a334a8)
+![image](https://github.com/Yogabharathi3/1/assets/118899387/02ecfaf3-93a2-4415-9458-84865a453995)
 
 ## RESULT
 Thus the program  has been executed successfully.
