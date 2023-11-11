@@ -1,24 +1,25 @@
-# EX-02-1b
+# EX-02-1c
 ## AIM
-To write a C program to print the given triangular number pattern using loop.
+To write a C program to display the value using auto storage class without using
+looping statements.
 ## ALGORITHM
 1. Start the program.
-2. Read a variable.
-3. Using two for loops print triangle number pattern.
+2. Read four variables using auto storage class.
+3. Print the value of each variable separately.
 4. Stop the program.
 ## PROGRAM
 ```
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
-int n,i;
-scanf("%d",&n);
-for(i=n;i>=1;i--)
-{
-for(int j=i;j>=1;j--)
-printf("%d",i);
-printf("\n");
-}
+auto int a,b,c,j;
+scanf("%d %d %d",&a,&b,&c);
+j=c;
+printf("j=%d",j);
+j=b;
+printf(" j=%d",j);
+j=a;
+printf("\nj=%d",j);
 }
 ```
 ## OUTPUT
