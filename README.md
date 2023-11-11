@@ -1,31 +1,31 @@
-# EX-03-1a
+# EX-03-1b
 ## AIM
-Write a program to prepare EMI calculation for 2000000 ,8.24,6Years using function withreturn type without arguments.
+Create a C program to check whether the given number is Armstrong number or not.
 ## ALGORITHM
 1. Define the function
 2. Call the function
-3. Print the EMI amount
-4. Handle errors
-5. End the program
+3. Check Armstrong Condition
+4. End the program
 ## PROGRAM
 ```
-#include<stdio.h>
-#include<math.h>
-float emi(float x,float y,float
-z){y=y/(12*100);
-z=z*12;
-float isl=x * y *pow((1+y),z) / (pow(1+y,z)-1);
-return isl;
-}
+#include <stdio.h>
 int main(){
-float a=2000000,b=8.24,c=6,emos;
-scanf("%f%f%f",&a,&b,&c);
-emos=emi(a,b,c);
-printf("Monthly EMI is= %.3f",emos);
+int n,a=0,b=0,temp=0;
+scanf("%d",&n);
+temp=n;
+while(n!=0)
+{b=n%10;
+a=a+(b*b*b);
+n=n/10;
+}
+if(temp==0)
+printf("%d is armstrong number",temp);
+else
+printf("%d is not a armstrong number",temp);
 }
 ```
 ## OUTPUT
-![image](https://github.com/Yogabharathi3/1/assets/118899387/02ecfaf3-93a2-4415-9458-84865a453995)
+![image](https://github.com/Yogabharathi3/1/assets/118899387/5a7f9731-3436-4674-a387-40b50bf4d3a4)
 
 ## RESULT
 Thus the program  has been executed successfully.
