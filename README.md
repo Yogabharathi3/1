@@ -1,29 +1,31 @@
-# EX-02-1c
+# EX-02-1d
 ## AIM
-To write a C program to display the value using auto storage class without using
-looping statements.
+To write a c program to find the sum of even digits using for loop.
 ## ALGORITHM
 1. Start the program.
-2. Read four variables using auto storage class.
-3. Print the value of each variable separately.
+2. Read a variable.
+3. Using for loop print the sum of even digits.
 4. Stop the program.
 ## PROGRAM
 ```
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
-auto int a,b,c,j;
-scanf("%d %d %d",&a,&b,&c);
-j=c;
-printf("j=%d",j);
-j=b;
-printf(" j=%d",j);
-j=a;
-printf("\nj=%d",j);
+int a,i,s=0;
+scanf("%d",&a);
+for(i=1;i<=a;i++)
+{
+if(i%2==0)
+{
+s+= i;
+printf("%d ",i);
+}
+}
+printf("\n%d ",s);
 }
 ```
 ## OUTPUT
-![image](https://github.com/Yogabharathi3/1/assets/118899387/4242bda3-0680-4946-847f-70c2125a0605)
+![image](https://github.com/Yogabharathi3/1/assets/118899387/e39bbce9-b362-4136-9f31-9f3df5a334a8)
 
 ## RESULT
 Thus the program  has been executed successfully.
