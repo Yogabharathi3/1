@@ -1,4 +1,4 @@
-# EX-02-2
+# EX-02-1a
 
 ## AIM
 To write a C Program to print the string "APPLE" n number of times.
