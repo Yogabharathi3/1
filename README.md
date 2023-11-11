@@ -1,11 +1,12 @@
-# EX-01-2c
+# EX-01-2d
 
 ## AIM
-To write a C program to find a maximum of two integers using a conditional operator.
+To write a C program to input two numbers from user and find minimum between
+two numbers using switch case.
 ## ALGORITHM
 1. Start the program.
 2. Read two variables.
-3. Find maximum of two number using conditional operator (?:).
+3. Find minimum of two numbers using switch case.
 4. Display the result.
 5. Stop the program.
 ## PROGRAM
@@ -13,14 +14,21 @@ To write a C program to find a maximum of two integers using a conditional opera
 #include <stdio.h>
 int main()
 {
-int num1, num2, max;
-scanf("%d%d", &num1, &num2);
-max = (num1 > num2) ? num1 : num2;
-printf("Maximum between %d and %d is %d", num1, num2, max);
+int a,b;
+scanf("%d%d",&a,&b);
+switch (a<b)
+{
+case 1:
+printf("%d",a);
+break;
+case 0:
+printf("%d",b);
+break;
+}
 }
 ```
 ## OUTPUT
-![image](https://github.com/Yogabharathi3/1/assets/118899387/c6f11af2-15e7-4409-809c-d2c4ad3f870e)
+![image](https://github.com/Yogabharathi3/1/assets/118899387/2b0b080b-39c4-4064-800a-433853af7bc5)
 
 ## RESULT
 Thus the program  has been executed successfully.
