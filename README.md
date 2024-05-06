@@ -1,8 +1,8 @@
-## EX.NO:1C
-##  C program to create a file with name "Staff.txt"
+## EX.NO:1d
+##  C program to create a file with name "Student.txt"
 ## Date:
 ## AIM:
-To Write a C program to create a file with name "Staff.txt"
+To Write a C program to create a file with name "Student.txt"
 ## Algorithm:
 ### STEP 1:
 Initialize variables
@@ -17,8 +17,7 @@ Print the output
 : #include 
 <stdio.h> int main() 
 {FILE *fp; 
-fp=fopen("Staff.txt","
-w"); if(fp!=NULL)
+fp=fopen("Student.txt","w"); if(fp!=NULL)
 {printf("File Created Successfully\n");
 }
 printf("File Opened\n"); 
