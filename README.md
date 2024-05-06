@@ -1,34 +1,38 @@
-## EX.NO:5C
-##  C program to print all the letters of the English alphabet.
+## EX.NO:5D
+##  C program to Find the Percentage or marks of students
 ## Date:
 ## AIM:
-To Write a C program to print all the letters of the English alphabet.
+To Write a C program to Find the Percentage or marks of students
 ## Algorithm:
 ### STEP 1:
 Initialize variables
 ### STEP 2:
 Read input
 ### STEP 3:
-Print the all letters of alphabet
+Calculate the percentage or marks of students
 ### STEP 4:
 Print the output
 ## Program:
 ``` 
-#include<stdio.h>
+#include<stdio.h> 
 int main()
-{
-char c='A'; 
-while(c<='Z')
-{ printf("%c ",c); 
-c++;
+{ int sum=0,per; 
+int m1,m2,m3;
+scanf("%d %d 
+%d",&m1,&m2,&m3); 
+sum=m1+m2+m3; per=sum/3; 
+if(per>=60&&per<=100)
+printf("You are 1st");
+else if(per>=50&&per<=60) 
+printf("You are 2nd");
+else if(per>=40&&per<=50)
+printf("You are 3rd"); 
+else
+printf("You are Fail");
 }
-return 0;
-}
-
 ```
 ## Output
-![image](https://github.com/Yogabharathi3/1/assets/118899387/81534c36-e5d2-491f-a6ca-011b2fd1f04e)
-
+![image](https://github.com/Yogabharathi3/1/assets/118899387/5f6fbc58-e856-4bfe-8f18-c671e1309f72)
 
 ## Result:
 Thus, the program is successfully verified.
