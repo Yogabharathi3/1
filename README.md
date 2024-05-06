@@ -1,33 +1,36 @@
-## EX.NO:3D
-##  C program to insert elements in queue using array
+## EX.NO:4A
+##  C program to traverse the linked list and display it in the following format
 ## Date:
 ## AIM:
-To Write a C program  to insert elements in queue using array
+To Write a C program to traverse the linked list and display it in the following format
 ## Algorithm:
 ### STEP 1:
 Initialize variables
 ### STEP 2:
 Read input
 ### STEP 3:
-Calculate the insert of queue using array
+Display the linked list
 ### STEP 4:
 Print the output
 ## Program:
 ```
-{char queue[50]; int 
-front,rear; void 
-enqueue(char data)
-{ if(front==-1)
+struct Node{ char 
+data; struct 
+Node *next;
+}*head;
+void display()
 {
-front=0;
-}
-rear=rear+1; 
-queue[rear]=data;
+struct Node* temp; 
+temp=head;
+while(temp!=NULL)
+{ printf("%c\n",temp-
+>data);
+temp=temp->next;}
 }
 
 ```
 ## Output
-![image](https://github.com/Yogabharathi3/1/assets/118899387/1614d47b-df6b-4f9b-8f2f-da8406dee9f0)
+![image](https://github.com/Yogabharathi3/1/assets/118899387/026fff51-782f-45be-ac8b-710058b26d38)
 
 ## Result:
 Thus, the program is successfully verified.
