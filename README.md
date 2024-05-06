@@ -1,36 +1,47 @@
-## EX.NO:4C
-##  C program to traverse a double linked list
+## EX.NO:4D
+##  C program to insert an element in double linked
 ## Date:
 ## AIM:
-To Write a C program to traverse a double linked list
+To Write a C program to insert an element in double linked
 ## Algorithm:
 ### STEP 1:
 Initialize variables
 ### STEP 2:
 Read input
 ### STEP 3:
-Display the traverse using double linked list
+Display the insert of an element using double linked list
 ### STEP 4:
 Print the output
 ## Program:
 ```
 struct Node
-{
-struct Node *prev; struct 
-Node *next; float data; 
+{ struct Node *prev, 
+*next; float data; 
 }*head;
-void display()
-{
-struct Node *ptr; ptr=head; 
-while(ptr!=NULL)
-{ printf("%.2f\n",ptr->data); ptr=ptr-
->next;
-}
-}
+void insert(float data)
+{ struct Node *ptr,*temp; ptr=(struct 
+Node *)malloc(sizeof(struct Node)); 
+if(ptr==NULL)
+{ printf("OVERFLOW\n");}
+else
+{ ptr->data=data; 
+if(head==NULL)
+{ ptr->next=NULL; ptr-
+>prev=NULL;
+head=ptr; }
+else
+{ temp=head; 
+while(temp-
+>next!=NULL) 
+{temp=temp->next; } 
+temp->next=ptr; ptr-
+>prev=temp; ptr-
+>next=NULL;}
+} }
 
 ```
 ## Output
-![image](https://github.com/Yogabharathi3/1/assets/118899387/657c493e-3aea-4225-8ea0-9ba7ed643dbf)
+![image](https://github.com/Yogabharathi3/1/assets/118899387/af8911cd-4b4a-46c3-beb8-400fc4b290af)
 
 ## Result:
 Thus, the program is successfully verified.
