@@ -1,37 +1,37 @@
-## EX.NO:6A
-##  C program to display stack elements using Linked List(store float data in stack )
+## EX.NO:6B
+##  C program to push an element in Stack using Linked List
 ## Date:
 ## AIM:
-To Write a C program to display stack elements using Linked List(store float data in stack )
+To Write a C program to push an element in Stack using Linked List
 ## Algorithm:
 ### STEP 1:
 Initialize variables
 ### STEP 2:
 Read input
 ### STEP 3:
-Display stack using linked list
+Display push stack using linked list
 ### STEP 4:
 Print the output
 ## Program:
 ``` 
-struct Node
-{ float data; 
-struct Node 
-*next;
-}*head; 
-void 
-display()
+void push(char data)
 {
-struct Node *p; 
-p=head;
-while(p!=NULL)
-{ printf("%.2f\n",p->data);
-p=p->next;
+struct Node *ptr=(struct Node*)malloc(sizeof(struct Node)); 
+if(head==NULL)
+{
+ptr->data=data; ptr-
+>next=NULL;
+head=ptr;
+} 
+else
+{
+ptr->data=data; ptr->next=head;
+head=ptr;
 }
 }
 ```
 ## Output
-![image](https://github.com/Yogabharathi3/1/assets/118899387/f590d282-1c3a-4c78-a879-748684c67ce2)
+![image](https://github.com/Yogabharathi3/1/assets/118899387/ff1f4802-2e9c-4af7-bbb0-6d52ccc82a98)
 
 ## Result:
 Thus, the program is successfully verified.
