@@ -1,4 +1,4 @@
-## EX.NO:5B
+## EX.NO:5C
 ##  C program to print all the letters of the English alphabet.
 ## Date:
 ## AIM:
