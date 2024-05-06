@@ -1,37 +1,36 @@
-## EX.NO:2B
-##  C program to print a five digit integer n, print the sum of its digits
+## EX.NO:2D
+##  C program to print the sum of the integers in the array
 ## Date:
 ## AIM:
-To Write a C program  to print a five digit integer n, print the sum of its digits
+To Write a C program  to print the sum of the integers in the array
 ## Algorithm:
 ### STEP 1:
 Initialize variables
 ### STEP 2:
 Read input
 ### STEP 3:
-Calculate sum of digits 
+Calculate sum of integers in the array
 ### STEP 4:
 Print the output
 ## Program:
 ```
-#include<stdio.h>
+#include<stdio.h> 
+#include <stdlib.h>
 int main()
-{
-int a,rem,sum=0; 
-scanf("%d",&a);
-while(a>0)
-{
-rem=a%10; 
-sum+=rem;
-a/=10;
+{ int limit,i,sum=0; 
+int* ptr; 
+scanf("%d", 
+&limit);
+ptr = (int*)malloc(limit * 
+sizeof(int)); for (i = 0; i < limit; i++) 
+{ scanf("%d", (ptr + i));
+sum += *(ptr + i);
 }
-printf("%d",sum);
-return 0;
-}
+printf("%d",su
+m); free(ptr); }
 
 ```
 ## Output
-![image](https://github.com/Yogabharathi3/1/assets/118899387/619b8e28-262b-4226-a6e3-1ed45f0e335e)
-
+![image](https://github.com/Yogabharathi3/1/assets/118899387/ff654196-6344-4529-b326-bd86720983a6)
 ## Result:
 Thus, the program is successfully verified.
