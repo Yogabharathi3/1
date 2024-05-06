@@ -1,37 +1,36 @@
-## EX.NO:1A
-##  C program to check eligibility of the person to vote in election
+## EX.NO:1B
+##  C program to print the the sum of its digits of a given a five digit integer n
 ## Date:
 ## AIM:
-To write a C program for structure to check eligibility of the 
-person to vote in election.
+To write a C program to print the the sum of its digits of a given a five digit integer n
 ## Algorithm:
 ### STEP 1:
-Define the Structure
+Initialize variables
 ### STEP 2:
-Input Data
+Read input
 ### STEP 3:
-Check Eligibility
+Calculate sum of digits
 ### STEP 4:
-Get the output
+Print the output
 ## Program:
 ```
 #include<stdio.h>
-struct elig
-{
-int age;
-char name[10];
-};
 int main()
-{ struct elig e;
-scanf("%d\n%s",&e.age,e.name); 
-printf("Age:%d\nName:%s\n",e.age,e.name);
-if(e.age>18) 
-printf("eligibility:yes"); 
-else printf("eligibility:no"); 
+{
+int a,rem,sum=0; 
+scanf("%d",&a);
+while(a>0)
+{
+rem=a%10; 
+sum+=rem;
+a/=10;
+}
+printf("%d",sum);
+return 0;
 }
 ```
 ## Output
-![image](https://github.com/Yogabharathi3/1/assets/118899387/68645458-af3b-4bd9-a1f2-f385557288cd)
+![image](https://github.com/Yogabharathi3/1/assets/118899387/a391c28b-2f13-4b4c-b3d7-be2c3ab031c9)
 
 ## Result:
-Thus, the program is successfully verified
+Thus, the program is successfully verified.
