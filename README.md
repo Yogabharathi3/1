@@ -1,4 +1,4 @@
-## EX.NO:2D
+## EX.NO:3A
 ##  C program to o find the peek of stack using array
 ## Date:
 ## AIM:
