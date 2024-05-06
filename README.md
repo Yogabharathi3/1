@@ -1,4 +1,4 @@
-## EX.NO:5A
+## EX.NO:5B
 ##  C program to print the 10th term of the series
 ## Date:
 ## AIM:
