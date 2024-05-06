@@ -1,30 +1,34 @@
-## EX.NO:6C
-##  C program to delete elements in queue using Linked list
+## EX.NO:6D
+##  C program to insert elements in queue using Linked list
 ## Date:
 ## AIM:
-To Write a C program to delete elements in queue using Linked list
+To Write a C program to insert elements in queue using Linked list
 ## Algorithm:
 ### STEP 1:
 Initialize variables
 ### STEP 2:
 Read input
 ### STEP 3:
-Display delete elements in queue using linked list
+Display insert elements in queue using linked list
 ### STEP 4:
 Print the output
 ## Program:
 ``` 
-void dequeue()
+struct Node
+{ float data; struct Node *next; 
+}*front=NULL,*rear=NULL;
+void enqueue(float data)
 {
-if(front == NULL)
+struct Node *p = (struct Node*)malloc(sizeof(struct Node));
+p->data=data; p->next=NULL;
+if(front==NULL)
 {
-printf("Queue is Empty!!!\n");
-}
-else{
-struct Node *temp; 
-temp=front; front=temp->next;
-free(temp);
-}
+front=rear=p;
+} 
+else
+{
+rear->next=p;
+rear=p;}
 }
 ```
 ## Output
