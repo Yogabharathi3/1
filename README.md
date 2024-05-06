@@ -1,37 +1,34 @@
-## EX.NO:6B
-##  C program to push an element in Stack using Linked List
+## EX.NO:6C
+##  C program to delete elements in queue using Linked list
 ## Date:
 ## AIM:
-To Write a C program to push an element in Stack using Linked List
+To Write a C program to delete elements in queue using Linked list
 ## Algorithm:
 ### STEP 1:
 Initialize variables
 ### STEP 2:
 Read input
 ### STEP 3:
-Display push stack using linked list
+Display delete elements in queue using linked list
 ### STEP 4:
 Print the output
 ## Program:
 ``` 
-void push(char data)
+void dequeue()
 {
-struct Node *ptr=(struct Node*)malloc(sizeof(struct Node)); 
-if(head==NULL)
+if(front == NULL)
 {
-ptr->data=data; ptr-
->next=NULL;
-head=ptr;
-} 
-else
-{
-ptr->data=data; ptr->next=head;
-head=ptr;
+printf("Queue is Empty!!!\n");
+}
+else{
+struct Node *temp; 
+temp=front; front=temp->next;
+free(temp);
 }
 }
 ```
 ## Output
-![image](https://github.com/Yogabharathi3/1/assets/118899387/ff1f4802-2e9c-4af7-bbb0-6d52ccc82a98)
+![image](https://github.com/Yogabharathi3/1/assets/118899387/616c34e4-d7a9-4d9a-823a-3fd73a6b5e2d)
 
 ## Result:
 Thus, the program is successfully verified.
