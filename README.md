@@ -1,44 +1,34 @@
 ## EX.NO:5B
-##  C program to print the 10th term of the series
+##  C program to print all the letters of the English alphabet.
 ## Date:
 ## AIM:
-To Write a C program to print the 10th term of the series
+To Write a C program to print all the letters of the English alphabet.
 ## Algorithm:
 ### STEP 1:
 Initialize variables
 ### STEP 2:
 Read input
 ### STEP 3:
-Calculate the 10th term of serious 
+Print the all letters of alphabet
 ### STEP 4:
 Print the output
 ## Program:
 ``` 
-#include 
-<stdio.h>
-int find_nth_term(int n, int a, int b, int c) {
-if(n==1) 
-return a; 
-else 
-if(n==2) 
-return b; 
-else 
-if(n==3) 
-return c;
-else
-return find_nth_term(n-1,b,c,a+b+c);
+#include<stdio.h>
+int main()
+{
+char c='A'; 
+while(c<='Z')
+{ printf("%c ",c); 
+c++;
 }
-int main() {
-int n, a, b, c;
-scanf("%d %d %d %d", &n, &a, &b, &c); 
-int ans = find_nth_term(n, a, b, c); 
-printf("%d", ans);
 return 0;
 }
 
 ```
 ## Output
-![image](https://github.com/Yogabharathi3/1/assets/118899387/76dc8b29-dc9d-461d-9e2e-29205be3f4d1)
+![image](https://github.com/Yogabharathi3/1/assets/118899387/81534c36-e5d2-491f-a6ca-011b2fd1f04e)
+
 
 ## Result:
 Thus, the program is successfully verified.
