@@ -1,40 +1,33 @@
-## EX.NO:2B
-##  C program to print ten space-separated integers in a single line denoting the frequency of each digit from 0 to 9
+## EX.NO:1C
+##  C program to create a file with name "Staff.txt"
 ## Date:
 ## AIM:
-To Write a C program to Print ten space-separated integers in a single line denoting the frequency of each digit from 0 to 9 .
+To Write a C program to create a file with name "Staff.txt"
 ## Algorithm:
 ### STEP 1:
 Initialize variables
 ### STEP 2:
 Read input
 ### STEP 3:
-Calculate the frequency of each digit from 0 to 9
+Create the file
 ### STEP 4:
 Print the output
 ## Program:
 ```
-#include<stdio.h> 
-#include<string.h> 
-int main()
-{char num[20]; 
-scanf("%s",num);
-int count[20];
-char digit[]={'0','1','2','3','4','5','6','7','8','9'};
-for(int i=0;i<10;i++)
-{count[i]=0; for(int 
-j=0;j<strlen(num);j++)
-{ if(digit[i]==num[j])
-count[i]++;
+: #include 
+<stdio.h> int main() 
+{FILE *fp; 
+fp=fopen("Staff.txt","
+w"); if(fp!=NULL)
+{printf("File Created Successfully\n");
 }
-printf("%d ",count[i]);
+printf("File Opened\n"); 
+fclose(fp);
+printf("File Closed\n");
 }
-return 0;
-}
-
 ```
 ## Output
-![image](https://github.com/Yogabharathi3/1/assets/118899387/3209016f-f73a-4558-8683-c16cf04430fb)
+![image](https://github.com/Yogabharathi3/1/assets/118899387/c9abf6de-704d-4f8a-a6bc-df466fc192fb)
 
 ## Result:
 Thus, the program is successfully verified.
