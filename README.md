@@ -1,4 +1,4 @@
-## EX.NO:1B
+## EX.NO:2B
 ##  C program to print ten space-separated integers in a single line denoting the frequency of each digit from 0 to 9
 ## Date:
 ## AIM:
