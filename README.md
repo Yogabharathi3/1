@@ -1,4 +1,4 @@
-## EX.NO:2A
+## EX.NO:2B
 ##  C program to print a five digit integer n, print the sum of its digits
 ## Date:
 ## AIM:
