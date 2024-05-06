@@ -1,25 +1,31 @@
 ## EX.NO:2A
-##  C program to print Hello Saveetha! on a single line, and then print the already provided input string to stdout
+##  C program to print a five digit integer n, print the sum of its digits
 ## Date:
 ## AIM:
-To Write a C program print Hello Saveetha! on a single line, and then print the already provided input string to stdout
+To Write a C program  to print a five digit integer n, print the sum of its digits
 ## Algorithm:
 ### STEP 1:
 Initialize variables
 ### STEP 2:
 Read input
 ### STEP 3:
-Print hello saveetha 
+Calculate sum of digits 
 ### STEP 4:
 Print the output
 ## Program:
 ```
-#include<stdio.h> 
+#include<stdio.h>
 int main()
 {
-char str[20]; 
-scanf("%[^\n]%*c",str); 
-printf("Hello, Saveetha!\n%s",str);
+int a,rem,sum=0; 
+scanf("%d",&a);
+while(a>0)
+{
+rem=a%10; 
+sum+=rem;
+a/=10;
+}
+printf("%d",sum);
 return 0;
 }
 
