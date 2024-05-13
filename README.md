@@ -1,38 +1,18 @@
-## EX.NO:6D
-##  C program to insert elements in queue using Linked list
-## Date:
-## AIM:
-To Write a C program to insert elements in queue using Linked list
-## Algorithm:
-### STEP 1:
-Initialize variables
-### STEP 2:
-Read input
-### STEP 3:
-Display insert elements in queue using linked list
-### STEP 4:
-Print the output
-## Program:
-``` 
-struct Node
-{ float data; struct Node *next; 
-}*front=NULL,*rear=NULL;
-void enqueue(float data)
-{
-struct Node *p = (struct Node*)malloc(sizeof(struct Node));
-p->data=data; p->next=NULL;
-if(front==NULL)
-{
-front=rear=p;
-} 
-else
-{
-rear->next=p;
-rear=p;}
-}
-```
-## Output
-![image](https://github.com/Yogabharathi3/1/assets/118899387/616c34e4-d7a9-4d9a-823a-3fd73a6b5e2d)
+# Online exam registration
+## UML DIAGRAMS:
+### 1.USE CASE DIAGRAM :
+![image](https://github.com/Yogabharathi3/software/assets/118899387/a078cbe7-47fd-4f5a-87f9-a02460b46384)
+### 2.COMMUNICATION DIAGRAM:
+![image](https://github.com/Yogabharathi3/software/assets/118899387/65466c17-c7d0-4d9f-8761-39a2d3b8db28)
 
-## Result:
-Thus, the program is successfully verified.
+### 3.SEQUENCE DIAGRAM:
+![image](https://github.com/Yogabharathi3/software/assets/118899387/9d7d5ce4-cce9-479c-aae7-cc29910f4e2b)
+
+### 4.PACKAGE DIAGRAM:
+![image](https://github.com/Yogabharathi3/software/assets/118899387/4d0495b4-bb69-4ac3-978b-0e1060b68af7)
+
+### 5.CLASS DIAGRAM:
+![image](https://github.com/Yogabharathi3/software/assets/118899387/22722241-57f6-4f50-9ab3-9cffb17e4abc)
+
+### 6.ACTVITY DIAGRAM:
+![image](https://github.com/Yogabharathi3/software/assets/118899387/a6a4969c-cc39-405c-b0da-2a80c74249a4)
